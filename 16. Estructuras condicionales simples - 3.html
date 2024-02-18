@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar por teclado alguno de estos tres nombres de buscadores: google, bing o yahoo.
+Segun que cadena se cargue por teclado redireccionar a la pagina respectiva con el objeto 
+location, por ejemplo:
+location.href = "https://www.google.com" -->
+<body>
+    <script>
+        let buscador=prompt("Ingrese el buscador: ")
+        if(buscador == "google"){
+            location.href = "https://www.google.com"
+        }else{
+            if(buscador == "youtube"){
+                location.href = "https://www.youtube.com"
+            }else{
+                if(buscador == "facebook"){
+                location.href = "https://www.facebook.com"
+            }
+
+            }
+        }
+    </script>
+</body>
+</html>

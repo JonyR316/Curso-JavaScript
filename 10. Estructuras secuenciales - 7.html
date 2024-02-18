@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar por teclado el precio de un producto (valor flotante) y ala cantidad de productos a llevar
+Calcular e imprimir el importe a pagar -->
+<body>
+    <script>
+        let precio=parseFloat(prompt("Ingrese el valor del producto: "))
+        let cantidad=parseInt(prompt("Ingrese el cantidad de productos: "))
+        let importe=cantidad*precio
+
+        document.write("El total a pagar es: ")
+        document.write(importe)
+        document.write(" dolares")
+    </script>
+</body>
+</html>
