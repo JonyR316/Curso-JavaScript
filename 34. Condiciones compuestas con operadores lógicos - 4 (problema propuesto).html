@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar 3 valores enteros por teclado. Mostrar posteriormente si los 3 valores ingresados son 
+iguales o no. -->
+<body>
+    <script>
+        let valor1=parseInt(prompt("Ingrese el primer valor: "))
+        let valor2=parseInt(prompt("Ingrese el primer valor: "))
+        let valor3=parseInt(prompt("Ingrese el primer valor: "))
+
+        if(valor1 == valor2 && valor1==valor3){
+            document.write("Los 3 valores ingresados son iguales")
+        }else{
+            if(valor1 == valor2 && valor1!=valor3 && valor2!=valor3){
+                document.write("Solo 2 valores son iguales")
+            }else{
+            if(valor2 == valor3 && valor2!=valor1){
+                document.write("Solo 2 valores son iguales")
+            }else{
+                document.write("Ningun valor es igual")
+            }
+        }
+    }
+    
+
+    </script>
+</body>
+</html>

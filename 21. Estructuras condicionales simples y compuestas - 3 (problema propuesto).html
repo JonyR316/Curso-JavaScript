@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Realizar un programa que solicite la carga del nombre de una persona y su edad.
+Si la edad es mayor o igual a 18 años mostrar un mensaje que puede ingresar al local, en caso que sea 
+menor de 18 mostrar otro mensaje -->
+<body>
+    <script>
+        let nombre=prompt("Ingrese el nombre: ")
+        let edad=parseInt(prompt("Ingrese su edad: "))
+        if (edad>=18){
+            document.write(nombre)
+            document.write("<br>")
+            document.write("Ingresar al local")
+        }else{
+            document.write(nombre)
+            document.write("<br>")
+            document.write("No puede ingresar")
+        }
+    </script>
+</body>
+</html>

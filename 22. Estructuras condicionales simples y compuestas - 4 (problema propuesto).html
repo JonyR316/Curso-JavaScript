@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar dos valores enteros por teclado. Efectuar y mostrar la division del primero respecto al 
+segundo. Mostrar un mensaje que no se puede efectuar la division en caso que el segundo valor ingresando 
+sea igual a cero -->
+<body>
+    <script>
+        let valor1=parseInt(prompt("Ingrese el primer valor: "))
+        let valor2=parseInt(prompt("Ingrese el segundo valor: "))
+
+        if(valor2==0){
+            document.write("No se pede efectuar la division")
+        }else{
+            let division=valor1/valor2
+            document.write("El resultado de la division es: "+division)
+        }
+
+    </script>
+</body>
+</html>

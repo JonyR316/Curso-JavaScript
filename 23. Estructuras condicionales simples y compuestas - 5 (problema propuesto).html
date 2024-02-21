@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar el precio de un producto, si tiene un valor mayor o igual a 250 aplicarle un descuento
+del 10% en caso de tener un valor menor aplicar solo un descuento del 5%. Mostrar cunato debe pagar el
+cliente con el descuento efectuado -->
+<body>
+    <script>
+        let precio=parseInt(prompt("Ingrese el precio del producto: "))
+        if(precio>=250){
+            let descuento=0.10*precio
+            let total=precio-descuento
+            document.write("El valor total: "+precio+" con el 10% de descuento, precio final: "+total)
+        }else{
+            if(precio<250){
+            let descuento=0.05*precio
+            let total=precio-descuento
+            document.write("El valor total: "+precio+" con el 5% de descuento, precio final: "+total)
+        }
+        }
+    </script>
+</body>
+</html>

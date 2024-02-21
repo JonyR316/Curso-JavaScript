@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar la altura de una persona en cm. Mostrar alguno de los siguientes mensajes dependiendo 
+de la altura ingresada:
+"Alta" si tiene mas de 190 cm
+"Normal" si tiene entre 160 cm y 190 cm
+"Baja" si tiene menos de 160 cm.
+
+(Mostrar el mensaje tanto en el documento, la consola y mediante la llamada a la funcion 'alert')
+La funcion alert muestra un cuadro de dialogo con un mensaje, por ejemplo:
+alert("Hola Mundo")
+
+similar a:
+document.write("Hola Mundo")
+console.log("Hola Mundo") -->
+<body>
+    <script>
+        let altura=parseInt(prompt("Ingrese la altura: "))
+        if(altura>190){
+            document.write("Alta")
+            console.log("Alta")
+            alert("Alta")
+        }else{
+            if(altura>=160){
+            document.write("Normal")
+            console.log("Normal")
+            alert("Normal")
+        }else{
+            document.write("Baja")
+            console.log("Baja")
+            alert("Baja")
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Se carga una fecha (dia, mes, año) por teclado en tres variantes distintas.
+Mostrar un mensaje si corresponde al primer trimestre del año Ejemplo:
+dia:10 mes:1 año:2024 -->
+<body>
+    <script>
+
+        let dia=parseInt(prompt("Ingrese el dia: "))
+        let mes=parseInt(prompt("Ingrese el mes: "))
+        let año=parseInt(prompt("Ingrese el año: "))
+
+        if(mes==1 || mes==2 || mes==3){
+            document.write("La fecha corresponde al primer trimestre del año")
+        }else{
+            document.write("La fecha no corresponde al primer trimestre del año")
+        }
+        
+
+
+
+
+        /* ---------Otra Solucion-------------
+        
+        let dia=parseInt(prompt("Ingrese el dia: "))
+        let mes=parseInt(prompt("Ingrese el mes: "))
+        let año=parseInt(prompt("Ingrese el año: "))
+        
+        if(dia<=31 && mes<=4 && año==2024){
+            document.write("dia:"+dia+" mes:"+mes+" año:"+año)
+        }else{
+            document.write("La fecha no corresponde al primer trimestre del año")
+        } */
+
+
+    </script>
+</body>
+</html>

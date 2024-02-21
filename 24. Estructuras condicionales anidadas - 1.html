@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Confeccionar un programa que pida por teclado tres notas de un alumno, calcule el promedio e 
+imprima alguno de estos mensajes:
+Si el promedio es >=7 mostrar "Promocionado". 
+Si el promedio es >=4 y < 7 mostrar "Regular".
+Si el promedio es < 4 mostrar "Reprobado".  -->
+<body>
+    <script>
+        let nota1=parseInt(prompt("Ingrese la primer nota: "))
+        let nota2=parseInt(prompt("Ingrese la segunda nota: "))
+        let nota3=parseInt(prompt("Ingrese la tercer nota: "))
+        let promedio=(nota1+nota2+nota3)/3
+
+        if(promedio>=7){
+            document.write("Su nota promedio es: "+promedio+" Promocionado")
+        }else{
+            if(promedio>=4){
+                document.write("Su nota promedio es: "+promedio+" Regular")
+            }else{
+                document.write("Su nota promedio es: "+promedio+" Reprobado") 
+            }
+        }
+    
+
+
+/*
+let navegador=prompt("Ingrese el nombre de su navegador google, bing, o yahoo: ")
+
+        if(navegador=="google"){
+            location.href = "https://www.google.com"
+        }else{
+            if(navegador=="bing"){
+                location.href = "https://www.bing.com"
+            }else{
+                if(navegador=="yahoo"){
+                    location.href = "https://www.yahoo.com"
+                }else{
+                    document.write("El nombre no coincide con ningun navegador")
+                }
+            }
+        }
+*/
+    </script>
+</body>
+</html>

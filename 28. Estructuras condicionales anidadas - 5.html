@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Un postulante a un empleo, realiza un test de capacitacion y se obtiene la siguiente informacion:
+
+Cantidad total de preguntas que se le realizaron y la cantidad de preguntas que contesto correctamente.
+
+Se pide confeccionar un programa que ingrese los dos datos por teclado e informe el nivel del mismo 
+segun el porcentaje de respuestas correctas que ha obtenido, y sabiendo que: 
+
+Nivel maximo:    Porcentaje>=90%
+Nivel medio:     Porcentaje>=75% y <90%
+Nivel regular:   Porcentaje>=50% y <75%
+Fuera de nivel   Porcentaje<50% -->
+<body>
+    <script>
+        let preguntas=parseInt(prompt("Ingrese la cantidad de preguntas: "))
+        let correctas=parseInt(prompt("Ingrese la cantidad de preguntas que contesto correctamente: "))
+        let total=correctas*100/preguntas
+
+        if(total>=90){
+            document.write("Nivel maximo")
+        }else{
+            if(total>=75){
+                document.write("Nivel medio")
+            }else{
+                if(total>=50){
+                    document.write("Nivel regular")
+                }else{
+                    document.write("Fuera de nivel")
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
