@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Solicitar al operador el ingreso por teclado de dos colores primarios (rojo-amarillo-azul), 
+un color en cada variable. Por ejemplo podemos llamar a las variables color1 y color2 
+
+Luego mostrar el color que se genera con su combinacion, tener en cuenta que si se ingresa :
+rojo + amarillo = naranja
+azul + rojo = violeta
+amarillo + azul = verde
+
+pero tener cuidado ya que el operador puede cargar:
+amarillo + rojo = naranja
+rojo + azul = violeta
+azul +amarillo = verde -->
+<body>
+    <script>
+        let color1=prompt("Ingrese el primer color primario: ")
+        let color2=prompt("Ingrese el segundo color primario: ")
+
+       document.write("----------------")
+       document.write("<br>")
+       document.write("Convinacion de colores")
+       document.write("<br>")
+       document.write("rojo + amarillo = naranja")
+       document.write("<br>")
+       document.write("azul + rojo = violeta")
+       document.write("<br>")
+       document.write("amarillo + azul = verde")
+       document.write("<br>")
+       document.write("amarillo + rojo = naranja")
+       document.write("<br>")
+       document.write("rojo + azul = violeta")
+       document.write("<br>")
+       document.write("azul +amarillo = verde")
+       document.write("<br>")
+       document.write("----------------")
+       document.write("<br>")
+
+        if(color1=="rojo" && color2=="amarillo" || color1=="amarillo " && color2=="rojo"){
+            document.write("naranja")
+        }else{if(color1=="azul" && color2=="rojo" || color1=="rojo" && color2=="azul"){
+            document.write("violeta")
+        }else{
+            if(color1=="amarillo" && color2=="azul" || color1=="azul" && color2=="amarillo"){
+            document.write("verde")
+        }else{
+            if(color1=="rojo" && color2=="rojo"){
+            document.write("rojo")
+        }else{
+            if(color1=="amarillo" && color2=="amarillo"){
+            document.write("amarillo")
+        }else{
+            {
+            if(color1=="azul" && color2=="azul"){
+            document.write("azul")
+        }
+        }
+        }
+        }
+        }
+        }
+        }
+
+
+    </script>
+</body>
+</html>

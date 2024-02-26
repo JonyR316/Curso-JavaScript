@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Desarrollar un programa que permita cargar n numeros enteros y luego nos informe cuantos 
+valores fueron pares y cuantos impares. 
+Emplear el operador % en la condicion de la estructura condicional: 
+if (valor%2==0) // Si el if da verdadero luego es par. -->
+<body>
+    <script>
+        let x=1
+        let pares=0
+        let inpares=0
+        let numeros=parseInt(prompt("Ingrese la cantidad de numeros: "))
+
+        while(x<=numeros){
+            let valor=parseInt(prompt("Ingrese el valor: "))
+            if(valor%2==0){
+                pares=pares+1
+            }else{
+                inpares=inpares+1
+            }
+            x=x+1
+        }
+
+        document.write("La cantidad de valores pares es: "+pares)
+        document.write("<br>")
+        document.write("La cantidad de valores inpares es: "+inpares)
+
+    </script>
+</body>
+</html>

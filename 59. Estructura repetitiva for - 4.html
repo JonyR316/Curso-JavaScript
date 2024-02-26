@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Escribir un programa que lea 10 numeros enteros y luego muestre cuantos valores ingresados 
+fueron multiplos de 3 y cuantos de 5. -->
+<body>
+    <script>
+        let multiplos3=0
+        let multiplos5=0
+
+        for(let x=1; x<=10; x++){
+            let num=parseInt(prompt("Ingrese el numero: "))
+            if(num%3==0){
+                multiplos3++
+            }
+            if(num%5==0){
+                    multiplos5++
+                }
+            
+        }
+
+        document.write("Cantidad de multiplos de 3: "+multiplos3)
+        document.write("<br>")
+        document.write("Cantidad de multiplos de 5: "+multiplos5)
+
+    </script>
+</body>
+</html>

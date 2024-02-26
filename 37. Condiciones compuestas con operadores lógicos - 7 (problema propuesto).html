@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Codificar un programa en el cual dada una lista de tres valores numericos enteros se calcule 
+e informe su rango de variacion (debe mostrar el menor y el mayor de ellos.) -->
+<body>
+    <script>
+        let num1=parseInt(prompt("Ingrese el primer numero: "))
+        let num2=parseInt(prompt("Ingrese el segundo numero: "))
+        let num3=parseInt(prompt("Ingrese el tercer numero: "))
+
+        if(num1>num2 && num1>num3){
+            document.write(num1+": Es el numero mayor")
+        }else{
+            if(num2>num3){
+                document.write(num2+": Es el numero mayor")
+            }else{
+                document.write(num3+": Es el numero mayor")
+            }
+        }
+        document.write("<br>")
+        if(num1<num2 && num1<num3){
+                document.write(num1+": Es el numero menor")
+            }else{
+                if(num2<num3){
+                document.write(num2+": Es el numero menor")
+            }else{
+                document.write(num3+": Es el numero menor")
+            }
+        }
+
+    </script>
+</body>
+</html>

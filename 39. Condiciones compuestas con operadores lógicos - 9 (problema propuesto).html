@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar un numero de mes por teclado y luego mostrar un mensaje si dicho mes tiene 31 dias, 
+30 dias o si se trata de febrero que tiene 28 o 29 dias dependiendo del año. -->
+<body>
+    <script>
+        let numMes=parseInt(prompt("Ingrese el numero de mes: "))
+
+        if(numMes==2){
+            document.write("Tiene 28 dias")
+        }else{
+            if(numMes==1 || numMes==3 || numMes==4 || numMes==5 || numMes==6){
+            document.write("Tiene 30 dias")
+        }else{
+            if(numMes==7 || numMes==8 || numMes==9 || numMes==10 || numMes==11 || numMes==12){
+                document.write("Tiene 31 dias")
+            }
+        }
+        }
+    </script>
+</body>
+</html>

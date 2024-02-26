@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Se ingresan un conjunto de n alturas de personas por teclado. Mostrar la altura promedio 
+de las personas (valor float para la altura por ejemplo: 1.75) -->
+<body>
+    <script>
+        let numero=parseInt(prompt("Ingrese el numero de personas: "))
+        let x=1
+        let suma=0
+
+        while(x<=numero){
+            let altura=parseFloat(prompt("Ingrese la altura: "))
+             suma=suma+altura
+            x=x+1
+        }
+        let promedio=suma/numero
+
+        document.write("El promedio de altura es: "+promedio)
+
+    </script>
+</body>
+</html>

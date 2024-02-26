@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Confeccionar un programa que lea n pares de datos, cada par de datos corresponde a la medidad de la 
+base y la altura de un triangulo. El programa debera informar: 
+a) La superficie de cada triangulo.
+b) La cantidad de triangulos cuya superficie es mayor a 12. -->
+<body>
+    <script>
+        let mayor=0
+        let n=parseInt(prompt("Ingrese la cantidad de pares: "))
+
+        for(let x=1; x<=n; x++){
+            let base=parseInt(prompt("Ingrese la base: "))
+            let altura=parseInt(prompt("Ingrese la altura: "))
+            let superficie=base*altura/2
+            document.write("Superficie del triangulo: "+superficie+"<br>")
+            if(superficie>12){
+                mayor++
+            }
+        }
+        document.write("Cantidad de triangulos cuya superficie es mayor a 12: "+mayor)
+
+    </script>
+</body>
+</html>

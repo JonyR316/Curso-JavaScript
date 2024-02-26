@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos 
+valores x e y (distintos de cero). 
+Posteriormente imprimir en pantalla en que cuadrante se ubica dicho punto.
+sabiendo que 1er Cuadrante: x>0 Y y>0,
+             2do Cuadrante: x<0 Y y>0,
+             3er Cuadrante: x>0 Y y<0,
+             4to Cuadrante: x>0 Y y<0, -->
+<body>
+    <script>
+        let x=parseFloat(prompt("Ingrese la cordenada X: "))
+        let y=parseFloat(prompt("Ingrese la cordenada Y: "))
+
+        document.write("La cordenada se encuntra en el: ")
+        if(x>0 && y>0){
+            document.write("Primer Cuadrante")
+        }else{
+            if(x<0 && y>0){
+                document.write("Segundo Cuadrante")
+            }else{
+                if(x<0 && y<0){
+                    document.write("Tercer Cuadrante")
+                }else{
+                    if(x>0 && y<0){
+                        document.write("Cuarto Cuadrante")
+                    }else{
+                        document.write("Ningun Cuadrante")
+                    }
+                }
+                
+            }
+        }
+    
+    </script>
+</body>
+</html>

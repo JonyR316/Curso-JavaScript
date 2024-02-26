@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Escribir un programa que solicite ingresar 10 notas de alumnos y nos informe cuantos tienen
+notas mayores o iguales a 7 y cuantos menores. -->
+<body>
+    <script>
+        let x=1
+        let altos=0
+        let bajos=0
+
+        while(x<=10){
+            let nota=parseInt(prompt("Ingrese la nota: "))
+            if(nota>=7){
+                altos=altos+1
+            }else{
+                bajos=bajos+1
+            }
+            x=x+1
+        }
+
+        document.write("Alumnos con nota de 7 o superior: "+altos)
+        document.write("<br>")
+        document.write("Alumnos con nota menor de 7: "+bajos)
+
+    </script>
+</body>
+</html>

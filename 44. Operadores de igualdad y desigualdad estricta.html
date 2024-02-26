@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar por teclado dos numeros. Olvidarse de llamar al parseInt al segundo numero. 
+Sumar los dos valores ingresados y ver el resultado obtenido.
+Luego comparar si el contenido de dichas variables son iguales utilizando el operador de igualdad estricto. -->
+<body>
+    <script>
+        let num1=parseInt(prompt("Ingrese el primer numero: "))
+        let num2=(prompt("Ingrese el segundo numero: "))
+        let suma=num1+num2
+        document.write("El resultado es: "+suma)
+
+        document.write("<br>")
+        if(num1===num2){
+            document.write("Son iguales")
+        }else{
+            document.write("Son distintas")
+        }
+
+    </script>
+</body>
+</html>

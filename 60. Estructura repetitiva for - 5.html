@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Escribir un programa que lea n numeros enteros y calcule la cantidad de valores mayores o iguales a 
+1000.
+n se carga por teclado.
+Este tipo de problemas tambien se puede resolver empleando la estructura repetitiva for. Lo primero 
+que se hace es cargar una variable que indique la cantidad de valores a ingresar. Dicha variable se carga 
+antes de entrar a la estructura repetitiva for.
+La estructura for permite que el valor inicial o final dependa de una variable cargada previamente por
+teclado. -->
+<body>
+    <script>
+        let mayores=0
+        let n=parseInt(prompt("Ingresar la cantidad de valores: "))
+
+        for(let x=1; x<=n; x++){
+            let valor=parseInt(prompt("Ingrese el valor: "))
+            if(valor>=1000){
+                mayores++
+            }
+        }
+        document.write("La cantidad de valores mayores o iguales a 1000: "+mayores)
+    </script>
+</body>
+</html>
