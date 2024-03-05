@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar una vocal en mayuscula o minuscula, luego mostrar un mensaje si dicha vocal se encuentra 
+en mayuscula o minuscula. -->
+<body>
+    <script>
+        let vocal=prompt("Ingrese una vocal: ")
+
+        switch(vocal){
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                document.write("La vocal ingresada es: ("+vocal+") y es Minuscula")
+                break
+            case "A":
+            case "E":
+            case "I":
+            case "O":
+            case "U":
+                document.write("La vocal ingresada es: ("+vocal+") y es Mayuscula")
+                break
+            default: 
+            document.write("No se ingreso una vocal")
+        }
+
+    </script>
+</body>
+</html>

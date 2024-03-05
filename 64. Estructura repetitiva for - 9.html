@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Confeccionar un programa que permita ingresar un valor del 1 al 10 y nos muestre la tabla de 
+multiplicar del mismo (los primeros 13 terminos).
+Ejemplo: Si ingreso 3 deberia aparecer en pantalla los valores 3,6,9 hasta el 39. -->
+<body>
+    <script>
+        let num=parseInt(prompt("Ingresar un valor del 1 al 10: "))
+        
+
+        if(num>=1 && num<=10){
+            document.write("La tabla de multiplicar de "+num)
+            document.write("<br>")
+            for(let x=1; x<=13; x++){
+            let tabla=x*num
+            document.write(num+" X "+x+" = "+tabla+"<br>")
+        }
+        }else{
+            document.write("Error: Solo del 1 al 10")
+        }
+
+    </script>
+</body>
+</html>

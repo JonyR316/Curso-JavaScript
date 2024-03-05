@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Realizar un programa que lea los lados de n triangulos, e informar:
+a) De cada uno de ellos, que tipo de triangulo es: 
+equilatero (tres lados iguales), isosceles (dos lados iguales), o escaleno (ningun lado igual)
+b) Cantidad de triangulos de cada tipo. -->
+<body>
+    <script>
+        let n=parseInt(prompt("Ingrese el numero de triangulos"))
+        let equilatero=0
+        let isosceles=0
+        let escaleno=0
+        for(let x=1; x<=n; x++){
+            let lado1=parseInt(prompt("ingrese el lado1: "))
+            let lado2=parseInt(prompt("ingrese el lado2: "))
+            let lado3=parseInt(prompt("ingrese el lado3: "))
+            if(lado1==lado2 && lado1==lado3 ){
+                equilatero=equilatero+1
+            }else{
+                if(lado1==lado2 || lado1==lado3 || lado2==lado3){
+                    isosceles=isosceles+1
+                }else{
+                    if(lado1!=lado2 && lado1!=lado3 && lado2!=lado3){
+                        escaleno=escaleno+1
+                    }
+                }
+            }
+        }
+        document.write("Triangulos Equilateros: "+equilatero)
+        document.write("<br>")
+        document.write("Triangulo Isosceles: "+isosceles)
+        document.write("<br>")
+        document.write("Triangulo Escaleno: "+escaleno)
+    </script>
+</body>
+</html>

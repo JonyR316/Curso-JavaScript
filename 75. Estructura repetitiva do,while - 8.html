@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Solicitar el ingreso de dos numeros enteros y mostrar su suma, mediante un 'alert'.
+Luego preguntar al usuario si quiere realizar la suma de dos numeros, si ingresa la cadena 'SI' 
+continuar dentro del do/while para la carga de otros dos numeros, con cualquier otra respuesta 
+finaliza el ciclo.
+Cuando termina el bucle mostrar la cantidad de operaciones efectuadas. -->
+<body>
+    <script>
+        let continuar
+        let cantidad=0
+
+        do{  
+            let num1=parseInt=(prompt("Ingrese un numero: "))
+            let num2=parseInt=(prompt("Ingrese un numero: "))
+            let suma=num1+num2
+            document.write("la suma es: "+suma+"<br>")
+            cantidad++
+            continuar=prompt("Desea continuar: ")
+            
+        }while(continuar=="Si" || continuar=="si")
+        
+        document.write("La cantida de sumas es: "+cantidad)
+        
+    </script>
+</body>
+</html>

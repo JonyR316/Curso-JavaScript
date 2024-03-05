@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Crea una aplicacion que nos permita adivinar un numero que genera la computadora en forma aleatoria.
+Primero debemos generar un valor aleatorio comprendido entre 1 y 50.
+Pedir al operador que adivine el numero, solicitando que ingrese el valor por teclado.
+Si el numero que ingresa por teclado es mayor al aleatorio informar al usuario con la funcion 'alert' el
+mensaje "piense uno menor".
+Si el numero ingresado es menor al aletorio mostrar con la funcion alert el mensaje "piense uno mayor".
+Finalizar con una felicitacion cuando ingrese el mismo numero.-->
+<body>
+    <script>
+        let aleatorio=Math.floor(Math.random()*50)+1
+        let num
+        do{
+            
+            num=parseInt(prompt("Ingrese el numero: "))
+            if(aleatorio>num){
+                alert("piense uno mayor")
+            }else{
+                if(aleatorio<num)
+                alert("piense uno menor")
+            }
+        }while(aleatorio!=num)
+        alert("Felicitaciones")
+        
+    </script>
+</body>
+</html>

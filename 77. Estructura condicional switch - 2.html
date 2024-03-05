@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Ingresar 2 enteros por teclado y luego preguntar al operador si quiere sumar o multiplicar dichos 
+valores.
+Analizar la respuesta del operador mediante un switch -->
+<body>
+    <script>
+        let num1=parseInt(prompt("Ingrese un numero: "))
+        let num2=parseInt(prompt("Ingrese un numero: "))
+        let operador=prompt("Quiere sumar o multiplicar: ")
+
+        switch(operador){
+            case "sumar": 
+                let suma=num1+num2
+                document.write("La suma de: "+num1+" + "+num2+" = "+suma)
+                break
+            case "multiplicar": 
+                let multiplicar=num1*num2
+                document.write("El producto de: "+num1+" X "+num2+" = "+multiplicar)
+                break
+        }
+
+
+    </script>
+</body>
+</html>

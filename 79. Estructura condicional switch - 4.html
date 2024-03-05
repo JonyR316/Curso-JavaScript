@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<! -- Cargar un valor entero que represente un dia de la semana.
+Suponer que 0 corresponde a domingo, 1 a lunes etc. , se debe mostrar el nombre del dia que le corresponde.
+Ejemplo: 
+Ingrese numero de dia: 0
+Corresponde al dia: domingo -->
+<body>
+    <script>
+        let dia=parseInt(prompt("Ingrese un numero de 1 a 7 para saber el dia de la semana: "))
+
+        switch(dia){
+            case 1: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Lunes")
+            break
+            case 2: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Martes")
+            break
+            case 3: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Miercoles")
+            break
+            case 4: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Jueves")
+            break
+            case 5: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Viernes")
+            break
+            case 6: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Sabado")
+            break
+            case 7: 
+            document.write("El numero ingresado es: ("+dia+") Y corresponde a Domingo")
+            break
+            default: document.write("No ingreso un numero correspondiente a un dia")
+        }
+
+    </script>
+</body>
+</html>
