@@ -12,16 +12,21 @@ Elegir cuando definir constantes y cuando variables. -->
 <body>
     <script>
         let pares=0
-        let contador=0
         const num1=parseInt(prompt("Ingrese el numero menor: "))
         const num2=parseInt(prompt("Ingrese el numero mayor: "))
 
-        for(let x=num1; ){
+        document.write("Numeros: ")
+        document.write("<br>")
+        for(let x=num1; x<=num2; x++){
             
+            if(x%2==0){
+                pares++
+            }
+            
+            document.write(x+" - ")       
         }
-
-        document.write("Numeros: "+contador+"<br>")
-        document.write("El numero de numeros pares es: "+pares)
+        document.write("<br>")
+        document.write("El cantidad de numeros pares es: "+pares)
 
 
     </script>
